@@ -10,7 +10,7 @@
         android:id="@+id/checkDelhi"
         android:layout_width="115dp"
         android:layout_height="45dp"
-        android:text="Delhi"
+        android:text="@string/delhi"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,41 +24,30 @@
         android:layout_width="134dp"
         android:layout_height="49dp"
         android:gravity="center_vertical"
-        android:text="Prefered City:"
+        android:text="@string/preferred_city"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintHorizontal_bias="0.064"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.665" />
-
-    <TextView
-        android:layout_width="127dp"
-        android:layout_height="43dp"
-        android:text="Hello World!"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.011"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.022" />
+        app:layout_constraintVertical_bias="0.62" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="127dp"
-        android:layout_height="141dp"
+        android:layout_width="246dp"
+        android:layout_height="194dp"
+        android:src="@drawable/hedgehog"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.027"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:srcCompat="@tools:sample/avatars"
+        android:contentDescription="@string/hedgehog"
+        tools:ignore="HardcodedText" />
 
     <RadioGroup
         android:id="@+id/radioGroup"
@@ -75,21 +64,21 @@
             android:id="@+id/radioBtn1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="18-21"
+            android:text="@string/_18_21"
             android:textStyle="bold" />
 
         <RadioButton
             android:id="@+id/radioBtn2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="22-30"
+            android:text="@string/_22_30"
             android:textStyle="bold" />
 
         <RadioButton
             android:id="@+id/radioBtn3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="30-50"
+            android:text="@string/_30_50"
             android:textStyle="bold" />
     </RadioGroup>
 
@@ -98,7 +87,7 @@
         android:layout_width="159dp"
         android:layout_height="52dp"
         android:gravity="center_vertical"
-        android:text="Enter Username: "
+        android:text="@string/enter_username"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -113,7 +102,7 @@
         android:layout_width="99dp"
         android:layout_height="45dp"
         android:gravity="center_vertical"
-        android:text="Age"
+        android:text="@string/age"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -121,14 +110,14 @@
         app:layout_constraintHorizontal_bias="0.051"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.466" />
+        app:layout_constraintVertical_bias="0.411" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/editTextUsername"
         android:layout_width="237dp"
         android:layout_height="52dp"
         android:ems="10"
-        android:hint="username"
+        android:hint="@string/username"
         android:inputType="textPersonName"
         android:textColorHint="#989595"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -136,13 +125,13 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.314" />
+        app:layout_constraintVertical_bias="0.313" />
 
     <CheckBox
         android:id="@+id/checkBangalore"
         android:layout_width="115dp"
         android:layout_height="45dp"
-        android:text="Bangalore"
+        android:text="@string/bangalore"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -155,7 +144,7 @@
         android:id="@+id/checkChennai"
         android:layout_width="115dp"
         android:layout_height="45dp"
-        android:text="Chennai"
+        android:text="@string/chennai"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -168,7 +157,7 @@
         android:id="@+id/checkMumbai"
         android:layout_width="115dp"
         android:layout_height="45dp"
-        android:text="Mumbai"
+        android:text="@string/mumbai"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -179,30 +168,30 @@
 
     <Button
         android:id="@+id/btnSubmit"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Submit"
+        android:layout_width="154dp"
+        android:layout_height="53dp"
+        android:text="@string/submit"
         android:textSize="26sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.07"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.815" />
+        app:layout_constraintVertical_bias="0.859" />
 
     <Button
         android:id="@+id/btnReset"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Reset"
+        android:layout_width="163dp"
+        android:layout_height="55dp"
+        android:text="@string/reset"
         android:textSize="26sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.883"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.911" />
+        app:layout_constraintVertical_bias="0.859" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
