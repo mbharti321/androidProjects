@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
                 if(mCheckDelhi.isChecked()){
                     displayMsg.append(", ").append(mCheckDelhi.getText());
                 }
-                
+
                Toast.makeText(MainActivity.this, displayMsg,Toast.LENGTH_SHORT).show();
             }
         });
