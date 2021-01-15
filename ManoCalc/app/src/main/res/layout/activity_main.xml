@@ -71,36 +71,33 @@
     <TextView
         android:id="@+id/textViewResultLbl"
         android:layout_width="208dp"
-        android:layout_height="72dp"
+        android:layout_height="48dp"
+        android:gravity="center"
         android:text="@string/result"
         android:textColor="#ECDDDD"
         android:textSize="36sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.325" />
+        app:layout_constraintVertical_bias="0.308" />
 
     <TextView
         android:id="@+id/textViewResult"
-        android:layout_width="192dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginEnd="2dp"
-        android:layout_marginRight="2dp"
-        android:gravity="right"
+        android:layout_width="336dp"
+        android:layout_height="54dp"
+        android:gravity="center"
         android:textColor="#ECDDDD"
         android:textSize="36sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.961"
-        app:layout_constraintStart_toEndOf="@+id/textViewResultLbl"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.328"
+        app:layout_constraintVertical_bias="0.394"
         tools:ignore="RtlHardcoded" />
 
     <TextView
