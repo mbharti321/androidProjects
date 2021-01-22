@@ -73,6 +73,9 @@ public class MainActivity extends AppCompatActivity {
                 if(mCheckDelhi.isChecked()){
                     displayMsg.append(", ").append(mCheckDelhi.getText());
                 }
+                if(!mCheckBangalore.isChecked() && !mCheckChennai.isChecked() && !mCheckMumbai.isChecked() && !mCheckDelhi.isChecked() ){
+                    displayMsg.append("No city selected");
+                }
                 mImageView.setVisibility(View.VISIBLE);
                Toast.makeText(MainActivity.this, displayMsg,Toast.LENGTH_SHORT).show();
 
