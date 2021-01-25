@@ -3,4 +3,12 @@
     <string name="hola_world_activity_1">Hola World! Activity 1</string>
     <string name="send">Send</string>
     <string name="activity2">activity2</string>
+    <string name="editText_main">Pls! Enter your message!</string>
+    <string name="text_header">Header 2</string>
+
+    <string name="button_second">Reply</string>
+    <string name="editText_second">Enter Your Reply Here</string>
+    <string name="text_header_reply">"Reply received "</string>
+    <string name="message_received">Message Received</string>
+    <string name="reply">Reply</string>
 </resources>
