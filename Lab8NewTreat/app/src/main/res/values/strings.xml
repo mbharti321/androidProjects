@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Lab8(NewTreat)</string>
+    <string name="username">Username</string>
+    <string name="enter_username">Enter username</string>
+    <string name="password">Password</string>
+    <string name="enter_password">Enter password</string>
+    <string name="login">Login</string>
+    <string name="reset">Reset</string>
+    <string name="features">Features</string>
+    <string name="welcome">Welcome</string>
+</resources>
