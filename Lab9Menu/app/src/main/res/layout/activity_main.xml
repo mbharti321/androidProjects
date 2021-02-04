@@ -9,28 +9,51 @@
     tools:context=".MainActivity">
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/main_textbox_layout"
-        android:layout_width="318dp"
-        android:layout_height="71dp"
+        android:id="@+id/main_number_layout"
+        android:layout_width="270dp"
+        android:layout_height="67dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.921">
+        app:layout_constraintVertical_bias="0.378">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/main_textbox"
+            android:id="@+id/main_number"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="#9FFB7E"
+            android:hint="@string/mobile_message"
+            android:inputType="number"
+            android:textSize="20sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/main_message_layout"
+        android:layout_width="343dp"
+        android:layout_height="74dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/main_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#9FFB7E"
             android:hint="@string/message" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <ImageButton
         android:id="@+id/ibtnSend"
-        android:layout_width="93dp"
-        android:layout_height="67dp"
+        android:layout_width="66dp"
+        android:layout_height="74dp"
         android:layout_weight="1"
         android:background="#00F9FAF9"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -38,7 +61,20 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.915"
-        app:srcCompat="@drawable/ic_baseline_send_24" />
+        app:layout_constraintVertical_bias="0.499"
+        app:srcCompat="@drawable/ic_baseline_send_24"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/imgMobile"
+        android:layout_width="45dp"
+        android:layout_height="66dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.737"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.378"
+        app:srcCompat="@drawable/ic_baseline_phone_android_24" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
