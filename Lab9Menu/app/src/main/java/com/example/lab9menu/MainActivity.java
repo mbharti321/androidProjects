@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.app.ShareCompat;
+import androidx.core.content.ContextCompat;
 
 import android.annotation.SuppressLint;
 import android.content.ComponentName;
@@ -27,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     TextInputEditText mMessage, mMain_number;
     ConstraintLayout mlayout;
     boolean iscolor = true;
-
+    int defaultColor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
         mMain_number = findViewById(R.id.main_number);
         mlayout = (ConstraintLayout) findViewById(R.id.layout1);
         mibtnSend = findViewById(R.id.ibtnSend);
+
+        defaultColor = ContextCompat.getColor(MainActivity.this, R.color.design_default_color_primary);
 
         mibtnSend.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -100,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
     private void changeColor() {
         if(iscolor)
         {
-            mlayout.setBackgroundColor(Color.GREEN);
+            mlayout.setBackgroundColor(Color.GRAY);
             iscolor = false;
         }
         else
@@ -110,6 +113,23 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+//    void setColor() {
+//
+//        AmbilWarnaDialog ambilWarnaDialog = new AmbilWarnaDialog(this, defaultColor, new AmbilWarnaDialog.OnAmbilWarnaListener() {
+//            @Override
+//            public void onCancel(AmbilWarnaDialog dialog) {
+//
+//            }
+//
+//            @Override
+//            public void onOk(AmbilWarnaDialog dialog, int color) {
+//                defaultColor = color;
+//                mlayout.setBackgroundColor(defaultColor);
+//            }
+//        });
+//        ambilWarnaDialog.show();
+//
+//    }
 
     private void share() {
         String txt = mMessage.getText().toString();

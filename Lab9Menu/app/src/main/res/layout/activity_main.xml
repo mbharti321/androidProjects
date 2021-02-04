@@ -10,18 +10,18 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/main_number_layout"
-        android:layout_width="270dp"
-        android:layout_height="67dp"
+        android:layout_width="278dp"
+        android:layout_height="68dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.392"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.378">
+        app:layout_constraintVertical_bias="0.366">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/main_number"
-            android:layout_width="match_parent"
+            android:layout_width="278dp"
             android:layout_height="match_parent"
             android:background="#9FFB7E"
             android:hint="@string/mobile_message"
@@ -67,14 +67,14 @@
 
     <ImageView
         android:id="@+id/imgMobile"
-        android:layout_width="45dp"
+        android:layout_width="44dp"
         android:layout_height="66dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.737"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.378"
+        app:layout_constraintVertical_bias="0.371"
         app:srcCompat="@drawable/ic_baseline_phone_android_24" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
