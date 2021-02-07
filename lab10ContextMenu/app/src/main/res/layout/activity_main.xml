@@ -4,71 +4,541 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F4F6F2"
+    android:background="#F5F8F3"
     tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/imgPizza"
-        android:layout_width="185dp"
-        android:layout_height="176dp"
+        android:layout_width="167dp"
+        android:layout_height="133dp"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintHorizontal_bias="0.065"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.693"
-        tools:srcCompat="@drawable/pizza" />
+        app:layout_constraintVertical_bias="0.438"
+        app:srcCompat="@drawable/pizza" />
 
     <ImageView
         android:id="@+id/imgDosa"
-        android:layout_width="185dp"
-        android:layout_height="176dp"
+        android:layout_width="152dp"
+        android:layout_height="134dp"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.934"
+        app:layout_constraintHorizontal_bias="0.926"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.685"
-        tools:srcCompat="@drawable/dosa" />
+        app:layout_constraintVertical_bias="0.438"
+        app:srcCompat="@drawable/dosa" />
 
     <ImageView
         android:id="@+id/imgJuice"
-        android:layout_width="185dp"
-        android:layout_height="176dp"
+        android:layout_width="161dp"
+        android:layout_height="141dp"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintHorizontal_bias="0.088"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.295"
-        tools:srcCompat="@drawable/juice" />
+        app:layout_constraintVertical_bias="0.176"
+        app:srcCompat="@drawable/juice" />
+
 
     <ImageView
         android:id="@+id/imgPulav"
-        android:layout_width="185dp"
-        android:layout_height="176dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintHorizontal_bias="0.927"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.295"
-        tools:srcCompat="@drawable/pulav" />
+        app:layout_constraintVertical_bias="0.179"
+        app:srcCompat="@drawable/pulav" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="273dp"
         android:layout_height="79dp"
         android:gravity="center"
-        android:text="Food Menu"
+        android:text="@string/food_menu"
         android:textColor="#EA7901"
         android:textSize="45sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.086" />
+        app:layout_constraintVertical_bias="0.01" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="270dp"
+        android:layout_height="42dp"
+        android:gravity="center"
+        android:text="Placed Order Details:"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.592" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="391dp"
+        android:layout_height="231dp"
+        android:background="#E1DCDC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.914">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.683" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="100dp"
+                android:layout_height="37dp"
+                android:gravity="center"
+                android:text="Name"
+                android:textColor="#913910"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.138"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.837" />
+
+            <TextView
+                android:id="@+id/textViewRate"
+                android:layout_width="100dp"
+                android:layout_height="37dp"
+                android:gravity="center"
+                android:text="Rate"
+                android:textColor="#913910"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.138"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.837" />
+
+            <TextView
+                android:id="@+id/textViewCount"
+                android:layout_width="100dp"
+                android:layout_height="37dp"
+                android:gravity="center"
+                android:text="Count"
+                android:textColor="#913910"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.138"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.837" />
+
+            <TextView
+                android:id="@+id/textViewAmount"
+                android:layout_width="100dp"
+                android:layout_height="37dp"
+                android:gravity="center"
+                android:text="Amount"
+                android:textColor="#913910"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.138"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.837" />
+
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textJuice"
+                android:layout_width="100dp"
+                android:layout_height="37dp"
+                android:gravity="center"
+                android:text="Juice"
+                android:textColor="#170801"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.138"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.837" />
+
+            <TextView
+                android:id="@+id/textViewJuiceRate"
+                android:layout_width="100dp"
+                android:layout_height="37dp"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#933204"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.138"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.837" />
+
+            <TextView
+                android:id="@+id/textViewJuiceCount"
+                android:layout_width="100dp"
+                android:layout_height="37dp"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#933204"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.138"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.837" />
+
+            <TextView
+                android:id="@+id/textViewJuiceTotal"
+                android:layout_width="100dp"
+                android:layout_height="37dp"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#933204"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.138"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.837" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textPizza"
+                android:layout_width="100dp"
+                android:layout_height="37dp"
+                android:gravity="center"
+                android:text="Pizza"
+                android:textColor="#170801"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.138"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.837" />
+
+            <TextView
+                android:id="@+id/textViewPizzaRate"
+                android:layout_width="100dp"
+                android:layout_height="37dp"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#933204"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.138"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.837" />
+
+            <TextView
+                android:id="@+id/textViewPizzaCount"
+                android:layout_width="100dp"
+                android:layout_height="37dp"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#933204"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.138"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.837" />
+
+            <TextView
+                android:id="@+id/textViewPizzaTotal"
+                android:layout_width="100dp"
+                android:layout_height="37dp"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#933204"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.138"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.837" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textPulav"
+                android:layout_width="100dp"
+                android:layout_height="37dp"
+                android:gravity="center"
+                android:text="Pulav"
+                android:textColor="#170801"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.138"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.837" />
+
+            <TextView
+                android:id="@+id/textViewPulavRate"
+                android:layout_width="100dp"
+                android:layout_height="37dp"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#933204"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.138"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.837" />
+
+            <TextView
+                android:id="@+id/textViewPulavCount"
+                android:layout_width="100dp"
+                android:layout_height="37dp"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#933204"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.138"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.837" />
+
+            <TextView
+                android:id="@+id/textViewPulavTotal"
+                android:layout_width="100dp"
+                android:layout_height="37dp"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#933204"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.138"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.837" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textDosa"
+                android:layout_width="100dp"
+                android:layout_height="37dp"
+                android:gravity="center"
+                android:text="Dosa"
+                android:textColor="#170801"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.138"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.837" />
+
+            <TextView
+                android:id="@+id/textViewDosaRate"
+                android:layout_width="100dp"
+                android:layout_height="37dp"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#933204"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.138"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.837" />
+
+            <TextView
+                android:id="@+id/textViewDosaCount"
+                android:layout_width="100dp"
+                android:layout_height="37dp"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#933204"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.138"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.837" />
+
+            <TextView
+                android:id="@+id/textViewDosaTotal"
+                android:layout_width="100dp"
+                android:layout_height="37dp"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#933204"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.138"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.837" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textTotal"
+                android:layout_width="109dp"
+                android:layout_height="37dp"
+                android:layout_span="2"
+                android:gravity="center"
+                android:text="Total"
+                android:textColor="#F10131"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.138"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.837" />
+
+            <TextView
+                android:id="@+id/textViewTotalCount"
+                android:layout_width="100dp"
+                android:layout_height="37dp"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#FF0202"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.138"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.837" />
+
+            <TextView
+                android:id="@+id/textViewTotalAmount"
+                android:layout_width="104dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#FF0202"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.138"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.837" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="219dp"
+        android:layout_height="45dp"
+        android:background="#228F23"
+        android:text="Reset"
+        android:textColor="#ED4604"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="#6FE673"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
