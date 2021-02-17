@@ -54,13 +54,13 @@ public class MainActivity3 extends AppCompatActivity {
         {
             int amt;
             amt = 430;
-            textView6.setText("Amount: $" +amt );
+            textView6.setText("Amount: Rs." +amt );
         }
         else if(message2.equals("Double"))
         {
             int amt;
             amt = 600;
-            textView6.setText("Amount: $" +amt );
+            textView6.setText("Amount: Rs." +amt );
         }
 
     }
