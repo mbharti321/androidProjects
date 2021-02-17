@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Lab11NavBar</string>
+    <string name="welcome">Welcome!</string>
+    <string name="home">Home</string>
+    <string name="dashboard">Book Now</string>
+    <string name="exit">Exit</string>
+    <string name="Description">Needed in the stunning grounds of  the botique hotel, Taj Hotel are the ultimate retreat.\nSet amid the exceptionally beautiful natural surroundings, they have the most luxurious surroundings.
+
+    </string>
+    <string name="kentisbury_grange">Taj Hotel</string>
+    <string name="address">
+        \t Taj Hotel,Mumbai
+        \n\t Maharashtra,India.\n
+        \n\t Contact us: +91 1271 882295
+    </string>
+    <string name="book_now">Book Now</string>
+    <string name="name">Name</string>
+    <string name="mobile">Mobile</string>
+    <string name="select_room">Select Room</string>
+    <string name="select_date_and_time">Select Date and Time</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="inspired_lodges">Inspired Lodges</string>
+    <string name="booking_details">Booking Details</string>
+
+    <string-array name="rooms">
+        <item>Single</item>
+        <item>Double</item>
+    </string-array>
+</resources>

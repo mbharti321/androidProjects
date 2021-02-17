@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    tools:context=".MainActivity2">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/main_toolbar" />
+
+        <ImageView
+            android:layout_width="260dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/booking" />
+
+        <TextView
+            android:id="@+id/title"
+
+            android:layout_width="388dp"
+            android:layout_height="66dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/elsie"
+            android:gravity="center_horizontal"
+            android:paddingTop="20dp"
+            android:text="@string/booking_details"
+            android:textColor="#560027"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/uname"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/cabin"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textColor="#880e4f"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/mobile"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/cabin"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textColor="#880e4f"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/room"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:fontFamily="@font/cabin"
+            android:textAlignment="center"
+            android:textColor="#880e4f"
+            android:gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:fontFamily="@font/cabin"
+            android:textAlignment="center"
+            android:textColor="#880e4f"
+            android:gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/user_time"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:fontFamily="@font/cabin"
+            android:textAlignment="center"
+            android:textColor="#880e4f"
+            android:gravity="center_horizontal"
+            />
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:fontFamily="@font/cabin"
+            android:textAlignment="center"
+            android:textColor="#880e4f"
+            android:gravity="center_horizontal"
+            />
+
+        <Button
+            android:id="@+id/confirm_button"
+            android:layout_width="145dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="08dp"
+            android:fontFamily="@font/emilys_candy"
+            android:onClick="display"
+            android:text="Confirm"
+            android:textSize="18sp" />
+    </LinearLayout>
+</androidx.drawerlayout.widget.DrawerLayout>
