@@ -11,7 +11,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-
 public class MainActivity extends AppCompatActivity {
 //Initialise variable
     DrawerLayout drawerLayout;
@@ -77,7 +76,6 @@ public class MainActivity extends AppCompatActivity {
     public void ClickExit(View view)
     {
         logout(this);
-
     }
 
     public static void logout(Activity activity) {

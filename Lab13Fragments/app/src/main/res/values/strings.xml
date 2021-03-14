@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Lab_13</string>
+    <string name="summer">Summer</string>
+    <string name="winter">Winter</string>
+    <string name="autumn">Autumn</string>
+    <string name="rainy">Rainy</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="summer_season">Summer Season</string>
+    <string name="descriptionsummer">
+        Summer is the warmest season of the year, falling between spring and autumn.
+        Temperatures over the period differ based upon the location on the Earth;
+        regions near the equator are typically warmer than those lying near the poles. </string>
+    <string name="descriptionwinter">
+        Winter is the coldest season of the year in some parts of the northern and southern hemisphere,
+        this season is characterized by falling snow and freezing cold temperatures.
+       </string>
+    <string name="descriptionautumn">Autumn is the season after summer, when leaves fall from trees.
+        Autumn is the third season of the year, coming after summer and before winter. </string>
+    <string name="descriptionrainy">
+        The wet season (sometimes called the rainy season) is the time of year when most of a regions average annual rainfall occurs.
+       The season lasts at least a month .</string>
+</resources>
