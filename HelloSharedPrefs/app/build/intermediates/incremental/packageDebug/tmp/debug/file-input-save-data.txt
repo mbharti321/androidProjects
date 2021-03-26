@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Fri Mar 26 10:10:55 IST 2021
+0.baseType=DIRECTORY
+0.base=C\:\\Users\\mbhar\\Desktop\\projects\\android\\Lab15SharedPrefs\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+0.path=classes.dex
+0.set=DEX
+count=1
