@@ -1,2 +1,2 @@
+rootProject.name='AsyncTask'
 include ':app'
-rootProject.name = "AsyncLab16"
